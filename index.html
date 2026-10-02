@@ -1,0 +1,126 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameZone - Universo dos jogos">
+
+    <link rel="icon" href="img/icone.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>GameZone</title>
+ </head>
+
+ <body>
+
+    <header>
+        <h1>GameZone</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="jogos.html">Jogos</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- DESTAQUE -->
+    <section class="hero">
+
+        <img src="img/destaque.jpg" alt="Imagem de destaque de um jogo">
+
+        <h2>Bem-vindo à GameZone</h2>
+
+        <p> O seu espaço para descobrir novos jogos,novidades e muito mais.</p>
+
+        <button
+            class="hero-button" onclick="document.querySelector('.destaques').scrollIntoView({behavior: 'smooth'});">
+             Conheça nossos jogos
+            </button>
+
+        </section>
+
+        <!-- JOGOS EM DESTAQUE -->
+    <section class="destaques">
+
+        <h2>Jogos em Destaque</h2>
+
+        <div class="cards">
+
+            <!-- GTA V -->
+         <div class="card">
+
+         <img src="img/gta.jpg" alt="GTA V">
+
+         <h3>GTA V</h3>
+
+        <p>Ação e aventura em mundo aberto.</p>
+
+        <button>Saiba mais</button>
+
+            </div>
+
+            <!-- VALORANT -->
+            <div class="card">
+
+             <img src="img/valorant.jpg" alt="Valorant">
+
+            <h3>Valorant</h3>
+
+            <p>FPS competitivo baseado em estratégia.</p>
+
+            <button>Saiba mais</button>
+
+            </div>
+
+            <!-- CALL OF DUTY -->
+            <div class="card">
+
+            <img src="img/callofduty.jpg" alt="Call of Duty">
+
+                <h3>Call of Duty</h3>
+
+                <p> Ação, estratégia e muita adrenalina.</p>
+
+                <button>Saiba mais</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal">
+
+        <div class="modal-content">
+
+            <span id="fechar" class="fechar">&times;</span>
+
+            <h2 id="modal-titulo"></h2>
+
+            <p id="modal-texto"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>&copy; 2026 GameZone</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+ </body>
+
+ </html>
